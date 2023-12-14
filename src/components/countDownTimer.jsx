@@ -32,6 +32,7 @@ export const CountdownTimer = ({ targetDate }) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const formatNumber = (number) => (number < 10 ? `0${number}` : number);
   return (
     <div className="text-white p-4 flex flex-col items-center ">
       <div className=" flex items-center gap-4">
@@ -47,19 +48,25 @@ export const CountdownTimer = ({ targetDate }) => {
           </span>
         </div>
         <div className=" flex flex-col  ">
-          <span className=" text-[100px] font-bold">{timeLeft.hours}</span>{" "}
+          <span className=" text-[100px] font-bold">
+            {formatNumber(timeLeft.hours)}
+          </span>{" "}
           <span className=" text-right">
             {getRussianTimesWords(timeLeft.hours, "hours")}
           </span>
         </div>
         <div className=" flex flex-col  ">
-          <span className=" text-[100px] font-bold">{timeLeft.minutes}</span>{" "}
+          <span className=" text-[100px] font-bold">
+            {formatNumber(timeLeft.minutes)}
+          </span>{" "}
           <span className=" text-right">
             {getRussianTimesWords(timeLeft.minutes, "minutes")}
           </span>
         </div>
         <div className=" flex flex-col  ">
-          <span className=" text-[100px] font-bold">{timeLeft.seconds}</span>{" "}
+          <span className=" text-[100px] font-bold">
+            {formatNumber(timeLeft.seconds)}
+          </span>{" "}
           <span className=" text-right ">
             {getRussianTimesWords(timeLeft.seconds, "seconds")}
           </span>

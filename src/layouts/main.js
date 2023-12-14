@@ -14,24 +14,29 @@ function Main() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const windowHeight = window.innerHeight;
       const scrolledHeight = window.scrollY;
-      if (scrolledHeight > windowHeight / 2) {
-        setShowButton(true);
-      } else {
+      const totalDocumentHeight = document.body.scrollHeight;
+
+      if (scrolledHeight + window.innerHeight >= totalDocumentHeight - 500) {
         setShowButton(false);
+      } else {
+        setShowButton(true);
       }
     };
+
+    // Добавляем обработчик события прокрутки
     window.addEventListener("scroll", handleScroll);
+
+    // Убираем обработчик события при размонтировании компонента
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-  const scrollToTop = () => {
+  const scrollToBottom = () => {
     window.scrollTo({
-      top: 0,
-      behavior: "smooth",
+      top: document.body.scrollHeight,
+      behavior: "smooth", // Добавляет плавность скролла
     });
   };
 
@@ -43,7 +48,10 @@ function Main() {
       <Plan />
       <Information />
       {showButton && (
-        <div className="fixed  p-2 bottom-4 right-4" onClick={scrollToTop}>
+        <div
+          className="fixed  p-2 bottom-4 right-4 animate-bounce  "
+          onClick={scrollToBottom}
+        >
           <Button label="Хочу" color={"#000000"} />
         </div>
       )}
