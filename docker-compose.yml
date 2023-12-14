@@ -1,0 +1,16 @@
+version: "1.0"
+services:
+  ##########################################################
+  #                  arm-screen-front
+  ##########################################################
+
+  arm-screen-front:
+    image: arm-screen-front
+    logging:
+      options:
+        max-size: "100m"
+    environment:
+      REACT_APP_URL_HOST: "${REACT_APP_URL_HOST}"
+    restart: always
+    ports:
+      - "3019:80"

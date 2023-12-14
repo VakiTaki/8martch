@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  @apply font-fredoka;
+}
+.nav-link {
+  @apply text-white font-normal text-sm hover:opacity-80  hover:text-indigo-400 transition duration-300 ease-out whitespace-nowrap;
+}
+
+.active {
+  @apply !text-indigo-500;
+}
+
+.p-toast-message-error {
+  @apply !bg-[#ffe7e6] p-4 rounded-md text-[#ff5757] m-2;
+}
+
+.p-toast-message-content svg {
+  @apply mr-2 mt-1;
+}
