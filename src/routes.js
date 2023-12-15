@@ -5,7 +5,7 @@ import Main from "./layouts/main";
 
 export const routes = [
   {
-    path: `${config.subFolder}/:code?`,
+    path: `${config.subFolder}/`,
     element: <Main />,
     display: true,
     index: true,

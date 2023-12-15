@@ -1,14 +1,18 @@
 import React from "react";
 import bg1 from "../images/first_block.png";
+import bg2 from "../images/first_small_last.png";
+import { useResize } from "../hooks/useResize";
 
 function Welcome() {
+  const { isScreenLg } = useResize();
+
   return (
     <div
-      className="  h-screen w-screen  bg-cover bg-no-repeat bg-[#161616] relative flex flex-col justify-center items-center text-white  gap-10 "
+      className=" md:bg-bg1 h-screen bg-center w-screen bg-cover  bg-no-repeat bg-[#161616] relative flex flex-col justify-center items-center text-white  gap-10 "
       style={{
         backgroundImage: `
            linear-gradient(to bottom, rgba(255, 255, 255, 0.3), transparent 1%, transparent 99%, rgba(255, 255, 255, 1)),
-           url(${bg1})
+           url(${isScreenLg ? bg1 : bg2})
          `,
       }}
     >

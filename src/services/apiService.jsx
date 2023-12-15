@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "/arm-screen/api/";
+const API_URL = "/api/v1/";
 
 const api = axios.create({
   baseURL: API_URL,
@@ -9,66 +9,38 @@ const api = axios.create({
   },
 });
 
-const realtimeMetroStatisticsEndpoint = "metro/realtime_statistics/";
-const realtimeMcdStatisticsEndpoint = "mcd/realtime_statistics/";
-const realtimeTramwaySpeedStatistics = "tramway/realtime_avg_speed/";
-const realtimeTramwayCount = "tramway/realtime_tramway_count/";
-const realtimeTramwayShedule = "tramway/schedule_completion/";
+const checkAuthEndpoint = "check_auth";
+const participateYesEndpoint = "participate_yes";
+const participateNoEndpoint = "participate_no";
 
-const getMetroStatistics = async () => {
+const getAuthInfo = async (body) => {
   try {
-    const response = await api.get(realtimeMetroStatisticsEndpoint);
-    return response.data;
+    const { data } = await api.post(checkAuthEndpoint, body);
+    return data;
   } catch (error) {
-    console.error("Error fetching coordinates:", error);
+    console.error("Error :", error);
     throw error;
   }
 };
 
-const getMcdStatistics = async () => {
+const yesAnswer = async (body) => {
   try {
-    const response = await api.get(realtimeMcdStatisticsEndpoint);
-    return response.data;
+    const response = await api.post(participateYesEndpoint, body);
+    return response.status;
   } catch (error) {
-    console.error("Error fetching coordinates:", error);
+    console.error("Error :", error);
     throw error;
   }
 };
 
-const getTramwaySpeedStatistics = async () => {
+const noAnswer = async (body) => {
   try {
-    const response = await api.get(realtimeTramwaySpeedStatistics);
-    return response.data;
+    const response = await api.post(participateNoEndpoint, body);
+    return response.status;
   } catch (error) {
-    console.error("Error fetching coordinates:", error);
+    console.error("Error :", error);
     throw error;
   }
 };
 
-const getTramwayCount = async () => {
-  try {
-    const response = await api.get(realtimeTramwayCount);
-    return response.data;
-  } catch (error) {
-    console.error("Error fetching coordinates:", error);
-    throw error;
-  }
-};
-
-const getTramwayShedule = async () => {
-  try {
-    const response = await api.get(realtimeTramwayShedule);
-    return response.data;
-  } catch (error) {
-    console.error("Error fetching coordinates:", error);
-    throw error;
-  }
-};
-
-export {
-  getMetroStatistics,
-  getMcdStatistics,
-  getTramwaySpeedStatistics,
-  getTramwayCount,
-  getTramwayShedule,
-};
+export { getAuthInfo, yesAnswer, noAnswer };

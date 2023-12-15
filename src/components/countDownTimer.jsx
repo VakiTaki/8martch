@@ -37,37 +37,39 @@ export const CountdownTimer = ({ targetDate }) => {
     <div className="text-white p-4 flex flex-col items-center ">
       <div className=" flex items-center gap-4">
         <img src={timesIcon} alt="Время иконка" className=" w-10 h-10 " />
-        <h2 className="   text-[60px] font-bold ">До события осталось</h2>
+        <h2 className="   text-[30px] md:text-[60px] font-bold ">
+          До события осталось
+        </h2>
       </div>
 
-      <div className=" grid grid-cols-4 gap-10  w-[600px] text-right">
+      <div className=" grid grid-cols-2  md:grid-cols-4 gap-10 w-[300px]  md:w-[600px] text-right">
         <div className=" flex flex-col  ">
           <span className=" text-[100px] font-bold ">{timeLeft.days}</span>
-          <span className=" text-right">
+          <span className=" text-right flex justify-center">
             {getRussianTimesWords(timeLeft.days, "days")}
           </span>
         </div>
         <div className=" flex flex-col  ">
-          <span className=" text-[100px] font-bold">
+          <span className=" text-[100px] font-bold flex justify-center ">
             {formatNumber(timeLeft.hours)}
           </span>{" "}
-          <span className=" text-right">
+          <span className=" text-right flex justify-center ">
             {getRussianTimesWords(timeLeft.hours, "hours")}
           </span>
         </div>
-        <div className=" flex flex-col  ">
-          <span className=" text-[100px] font-bold">
+        <div className=" flex flex-col flex justify-center ">
+          <span className=" text-[100px] font-bold flex justify-center">
             {formatNumber(timeLeft.minutes)}
           </span>{" "}
-          <span className=" text-right">
+          <span className=" text-right flex justify-center">
             {getRussianTimesWords(timeLeft.minutes, "minutes")}
           </span>
         </div>
         <div className=" flex flex-col  ">
-          <span className=" text-[100px] font-bold">
+          <span className=" text-[100px] font-bold flex justify-center">
             {formatNumber(timeLeft.seconds)}
           </span>{" "}
-          <span className=" text-right ">
+          <span className=" text-right flex justify-center">
             {getRussianTimesWords(timeLeft.seconds, "seconds")}
           </span>
         </div>

@@ -7,7 +7,7 @@ function TimeLine2() {
       <div className="max-w-xl mx-auto ">
         <div className="text-center ">
           <div className="flex flex-col items-center  ">
-            <h1 className="text-[60px] font-bold leading-tight text-black ">
+            <h1 className=" text-[30px] md:text-[60px] font-bold leading-tight text-black ">
               <span className="  relative font-bold">
                 <img
                   src={hat}
@@ -25,7 +25,7 @@ function TimeLine2() {
       <div className="flex flex-col justify-center ">
         <div className="w-full px-4 mx-auto lg:max-w-5xl ">
           <div className="relative">
-            <div className="absolute hidden w-1 h-[85%] mt-4 transform -translate-x-1/2 bg-[#c9e2f5]  lg:block left-1/2"></div>
+            <div className="absolute hidden w-1 h-[90%] mt-4 transform -translate-x-1/2 bg-[#c9e2f5]  lg:block left-1/2"></div>
             <div className="space-y-2 lg:space-y-4">
               {/* <!-- Left section --> */}
               <div>
@@ -46,7 +46,7 @@ function TimeLine2() {
                               </span>
                             </div>
                             <div className="flex-1 p-4 pr-4 border-l border-gray-300 ">
-                              <p className="mb-2 text-xl font-bold text-[#696969] ">
+                              <p className="mb-0 text-xl font-bold text-[#696969] ">
                                 Сбор гостей в Конференц зале "Европейский"
                               </p>
                               <p className="text-gray-700 ">
@@ -97,7 +97,7 @@ function TimeLine2() {
                               </span>
                             </div>
                             <div className="flex-1 p-4 pr-4 border-l border-gray-300 ">
-                              <p className="mb-2 text-xl font-bold  text-[#696969] ">
+                              <p className="mb-0 text-xl font-bold  text-[#696969] ">
                                 Официальная часть мероприятия
                               </p>
                               <p className="text-gray-700 ">
@@ -133,7 +133,7 @@ function TimeLine2() {
                               </span>
                             </div>
                             <div className="flex-1 p-4 pr-4 border-l border-gray-300 ">
-                              <p className="mb-2 text-xl font-bold text-[#696969] ">
+                              <p className="mb-0 text-xl font-bold text-[#696969] ">
                                 Перерыв
                               </p>
                               <p className="text-gray-700 ">
@@ -184,7 +184,7 @@ function TimeLine2() {
                               </span>
                             </div>
                             <div className="flex-1 p-4 pr-4 border-l border-gray-300 ">
-                              <p className="mb-2 text-xl font-bold text-[#696969] ">
+                              <p className="mb-0 text-xl font-bold text-[#696969] ">
                                 Велком в Конференц зале "Континенталь"
                               </p>
                               <p className="text-gray-700 ">
@@ -216,11 +216,11 @@ function TimeLine2() {
                               <span className="text-lg text-[#002f54] flex flex-col items-center ">
                                 <span>18:00</span>
                                 <span>-</span>
-                                <span>13:00</span>
+                                <span>23:00</span>
                               </span>
                             </div>
                             <div className="flex-1 p-4 pr-4 border-l border-gray-300 ">
-                              <p className="mb-2 text-xl font-bold text-[#696969] ">
+                              <p className="mb-0 text-xl font-bold text-[#696969] ">
                                 Банкет
                               </p>
                               <p className="text-gray-700 ">
@@ -271,8 +271,8 @@ function TimeLine2() {
                               </span>
                             </div>
                             <div className="flex-1 p-4 pr-4 border-l border-gray-300 ">
-                              <p className="mb-2 text-xl font-bold text-[#696969] ">
-                                Велком в Конференц зале "Континенталь"
+                              <p className="mb-0 text-xl font-bold text-[#696969] ">
+                                Финал
                               </p>
                               <p className="text-gray-700 ">
                                 {/* Официальная часть мероприятия */}

@@ -2,13 +2,10 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 
 module.exports = function (app) {
    app.use(
-      '/arm-screen/api/',
+      '/api/v1/',
       createProxyMiddleware({
-         target: 'http://192.168.4.45:5005',
+         target: 'http://37.46.134.70:9393/',
          changeOrigin: true,
-         pathRewrite: {
-            '^/arm-screen/api/': '/api/',
-         },
       })
    );
 };

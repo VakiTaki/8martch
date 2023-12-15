@@ -15,8 +15,8 @@ function Place() {
     >
       <div className=" flex flex-col items-center">
         <div className="flex flex-col items-center "></div>
-        <div className="flex   justify-between p-4 gap-8">
-          <div className="w-1/2 h-full rounded-md shadow-xl">
+        <div className=" flex-col  flex md:flex-row   justify-between p-4 gap-8">
+          <div className="md:w-1/2 h-full rounded-md shadow-xl">
             <img
               src={map1}
               alt="Карта"
@@ -24,13 +24,15 @@ function Place() {
             />
           </div>
 
-          <div className=" w-1/2 flex flex-col gap-10  ">
-            <h2 className=" text-[60px] font-bold  ">О мероприятии</h2>
+          <div className=" md:w-1/2 flex flex-col gap-10  ">
+            <h2 className=" text-[30px] md:text-[60px] font-bold  ">
+              О мероприятии
+            </h2>
             {/* <p className=" text-[#696969] ">text</p> */}
             <div className="flex gap-4 items-center">
               <img src={timeIcon} alt="Time" />
               <div className=" flex flex-col  ">
-                <span className=" text-[18px] text-[#002f54] uppercase font-semibold ">
+                <span className=" text-[16px] md:text-[18px] text-[#002f54] uppercase font-semibold ">
                   Время проведения: 28 декабря
                 </span>
                 <span className=" text-[15px] text-[#696969]">
@@ -42,7 +44,7 @@ function Place() {
             <div className="flex gap-4 items-center">
               <img src={mapIcon} alt="Time" />
               <div className=" flex flex-col  ">
-                <span className=" text-[18px] text-[#002f54] uppercase font-semibold ">
+                <span className=" text-[16px] md:text-[18px] text-[#002f54] uppercase font-semibold ">
                   Место проведения: Центр международной торговли
                 </span>
                 <span className=" text-[15px] text-[#696969]">
