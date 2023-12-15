@@ -28,6 +28,7 @@ function Main() {
     } else {
       setToken(localStorage.getItem("token"));
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [code]);
 
   const getInfo = (body) => {

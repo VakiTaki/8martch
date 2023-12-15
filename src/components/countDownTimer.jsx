@@ -57,7 +57,7 @@ export const CountdownTimer = ({ targetDate }) => {
             {getRussianTimesWords(timeLeft.hours, "hours")}
           </span>
         </div>
-        <div className=" flex flex-col flex justify-center ">
+        <div className=" flex flex-col justify-center ">
           <span className=" text-[100px] font-bold flex justify-center">
             {formatNumber(timeLeft.minutes)}
           </span>{" "}

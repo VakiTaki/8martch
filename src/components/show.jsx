@@ -14,6 +14,12 @@ function Show() {
       <h2 className="text-[30px] md:text-[60px] font-bold text-center text-black">
         Вас ждет выступление кавер группы «Luxury Band»
       </h2>
+      <p className=" text-[20px] md:text-[30px] text-[#002f54]  font-semibold  px-2 text-center">
+        А также много интересного: конкурсы, призы...
+      </p>
+      <p className=" text-[20px] md:text-[30px] text-[#002f54] font-semibold px-2 text-center ">
+        Следите за информацией
+      </p>
       <img src={bg1} alt="Show" className="" />
       {/* <div className=" absolute top-[20%] left-[10%] flex  flex-col justify-center items-center gap-10 p-10 rounded-md ">
         <h1 className=" text-[100px] text-[#d47dff]">Новый год!</h1>
