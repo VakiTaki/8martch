@@ -24,7 +24,7 @@ module.exports = {
         '200': '200px',
       },
       fontFamily: {
-        fredoka: ['Fredoka', 'sans-serif'],
+        raleway: ['Raleway'],
       },
     },
   },

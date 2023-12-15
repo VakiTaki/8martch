@@ -10,18 +10,16 @@ function Information() {
       }
       style={{
         backgroundImage: `
-            linear-gradient(to bottom, rgba(255, 255, 255, 0.5), transparent 1%, transparent 99%, rgba(255, 255, 255, 0.5)),
-            url(${surprise})
+            linear-gradient(to bottom, rgba(255, 255, 255, 0.5), transparent 1%, transparent 99%, rgba(255, 255, 255, 0.5))
           `,
-        animation: "moveBackground 10s linear infinite", // Настройте продолжительность и другие параметры анимации
       }}
     >
       <div className="  text-white flex flex-col gap-4 bg-white  p-10  rounded-md bg-opacity-5 w-full h-full  items-center justify-center    ">
         <h2 className=" text-[50px] ">Название мероприятия</h2>
         <p>Краткая информация о мероприятии</p>
         <div className=" flex  items-center gap-10 mt-4">
-          <Button label="Пойду" color={"#00800075"} />
-          <Button label="Не пойду" color={"#ff000075"} />
+          <Button label="Пойду" color={"#002f54"} />
+          <Button label="Не пойду" color={"#002f54"} />
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ import { CountdownTimer } from "./countDownTimer";
 function Time() {
   return (
     <div
-      className=" bg-slate-900 w-full flex justify-center "
+      className=" bg-[#161616] w-full flex justify-center py-[200px]  "
       style={{
         backgroundImage: `
     linear-gradient(to bottom, rgba(255, 255, 255, 0.5), transparent 5%, transparent 95%, rgba(255, 255, 255, 0.5))
@@ -12,7 +12,7 @@ function Time() {
       }}
     >
       <CountdownTimer
-        targetDate={new Date("December 31, 2023 23:59:59").getTime()}
+        targetDate={new Date("December 28, 2023 15:00:00").getTime()}
       />
     </div>
   );

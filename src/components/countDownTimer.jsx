@@ -37,7 +37,7 @@ export const CountdownTimer = ({ targetDate }) => {
     <div className="text-white p-4 flex flex-col items-center ">
       <div className=" flex items-center gap-4">
         <img src={timesIcon} alt="Время иконка" className=" w-10 h-10 " />
-        <h2 className="text-3xl font-extrabold ">До события осталось</h2>
+        <h2 className="   text-[60px] font-bold ">До события осталось</h2>
       </div>
 
       <div className=" grid grid-cols-4 gap-10  w-[600px] text-right">
