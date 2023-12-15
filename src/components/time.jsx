@@ -7,7 +7,7 @@ function Time() {
       className=" bg-slate-900 w-full flex justify-center "
       style={{
         backgroundImage: `
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.5), transparent 1%, transparent 99%, rgba(255, 255, 255, 0.5))
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.5), transparent 5%, transparent 95%, rgba(255, 255, 255, 0.5))
   `,
       }}
     >

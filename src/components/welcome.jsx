@@ -8,7 +8,7 @@ function Welcome() {
       className="  h-screen w-screen  bg-cover bg-no-repeat bg-slate-900 relative flex flex-col justify-center items-center text-white  gap-10"
       style={{
         backgroundImage: `
-           linear-gradient(to bottom, rgba(255, 255, 255, 0.5), transparent 1%, transparent 99%, rgba(255, 255, 255, 0.5)),
+           linear-gradient(to bottom, rgba(255, 255, 255, 0.3), transparent 1%, transparent 99%, rgba(255, 255, 255, 1)),
            url(${bg1})
          `,
       }}

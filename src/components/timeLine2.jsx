@@ -1,13 +1,22 @@
 import React from "react";
+import hat from "../images/hat.png";
 
 function TimeLine2() {
   return (
     <section className="py-16 bg-[#EFF0F4] lg:py-20  font-poppins">
-      <div className="max-w-xl mx-auto">
+      <div className="max-w-xl mx-auto ">
         <div className="text-center ">
-          <div className="flex flex-col items-center ">
+          <div className="flex flex-col items-center  ">
             <h1 className="text-5xl font-bold leading-tight text-slate-700 ">
-              Расписание <span className=" text-slate-800">мероприятия</span>{" "}
+              <span className=" text-5xl relative ">
+                <img
+                  src={hat}
+                  alt="Шляпа"
+                  className=" absolute bottom-[72%] -left-[22%]  "
+                />
+                Р
+              </span>
+              асписание <span className=" text-slate-800">мероприятия</span>{" "}
             </h1>
           </div>
           <p className="mb-16 text-base text-center text-gray-500"></p>
@@ -23,7 +32,7 @@ function TimeLine2() {
                 <div className="flex flex-col items-center">
                   <div className="flex items-center justify-start w-full mx-auto">
                     <div className="w-full lg:w-1/2 lg:pr-8">
-                      <div className="relative flex-1 mb-10 bg-white rounded shadow lg:mb-8 ">
+                      <div className="relative flex-1 mb-10 bg-white rounded-md shadow lg:mb-8 ">
                         <div className="absolute inline-block w-4 overflow-hidden -translate-y-1/2 top-3 -right-4">
                           <div className="hidden h-10 origin-bottom-left transform -rotate-45 bg-white shadow lg:block"></div>
                         </div>
@@ -72,7 +81,7 @@ function TimeLine2() {
                 <div className="flex flex-col items-center">
                   <div className="flex items-center justify-end w-full mx-auto">
                     <div className="w-full lg:w-1/2 lg:pl-8">
-                      <div className="relative flex-1 mb-10 bg-white rounded shadow lg:mb-8 ">
+                      <div className="relative flex-1 mb-10 bg-white rounded-md shadow lg:mb-8 ">
                         <div className="absolute inline-block w-4 overflow-hidden -translate-y-1/2 top-7 -left-4">
                           <div className="hidden h-10 origin-top-right transform -rotate-45 bg-white  lg:block drop-shadow-lg"></div>
                         </div>
