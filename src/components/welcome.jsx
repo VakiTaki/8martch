@@ -1,6 +1,6 @@
 import React from "react";
-import bg1 from "../images/first_block_new.png";
-import bg2 from "../images/first_small_new.png";
+import bg1 from "../images/first_block_very_new.png";
+import bg2 from "../images/first_small_very_new.png";
 import { useResize } from "../hooks/useResize";
 
 function Welcome() {

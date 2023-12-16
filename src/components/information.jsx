@@ -42,7 +42,7 @@ const CompletedUser = ({ user, onYes }) => {
             <Button
               label="Все-таки пойду"
               color={"#d27bfd"}
-              text={" text-black"}
+              text={" text-black w-[200px]"}
               onClick={() => onYes({ token: user?.token })}
             />
           </>
@@ -69,18 +69,18 @@ const NotCompletedUser = ({ user, onYes, onNo }) => {
       <p className=" text-[20px] md:text-[40px] font-semibold text-center">
         {user?.fullname || "ФИО"}
       </p>
-      <div className=" flex  items-center gap-10 mt-4">
+      <div className=" flex-col md:flex-row flex  items-center gap-10 mt-4">
         <Button
           label="Пойду"
           color={"#d27bfd"}
-          text={" text-black"}
+          text={" text-black w-[200px]"}
           onClick={() => onYes({ token: user?.token })}
         />
 
         <Button
           label="Не пойду"
           color={"#ffdc86"}
-          text={" text-black"}
+          text={" text-black w-[200px]"}
           onClick={() => onNo({ token: user?.token })}
         />
       </div>
