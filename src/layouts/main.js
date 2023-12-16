@@ -10,6 +10,7 @@ import { ArrowDownIcon } from "@heroicons/react/24/outline";
 import { getAuthInfo, yesAnswer, noAnswer } from "../services/apiService";
 import Spinner from "../components/spinner";
 import Show from "../components/show";
+//test
 
 function Main() {
   const navigate = useNavigate();
