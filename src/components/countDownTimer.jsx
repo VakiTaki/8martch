@@ -44,13 +44,15 @@ export const CountdownTimer = ({ targetDate }) => {
 
       <div className=" grid grid-cols-2  md:grid-cols-4 gap-10 w-[300px]  md:w-[600px] text-right">
         <div className=" flex flex-col  ">
-          <span className=" text-[100px] font-bold ">{timeLeft.days}</span>
+          <span className=" flex justify-center items-center text-[100px] font-bold ">
+            {timeLeft.days}
+          </span>
           <span className=" text-right flex justify-center">
             {getRussianTimesWords(timeLeft.days, "days")}
           </span>
         </div>
         <div className=" flex flex-col  ">
-          <span className=" text-[100px] font-bold flex justify-center ">
+          <span className="  text-[100px] font-bold flex justify-center ">
             {formatNumber(timeLeft.hours)}
           </span>{" "}
           <span className=" text-right flex justify-center ">
