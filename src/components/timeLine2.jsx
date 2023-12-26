@@ -3,7 +3,7 @@ import hat from "../images/hat.png";
 
 function TimeLine2() {
   return (
-    <section className="py-16 bg-[#EFF0F4] lg:py-20  font-poppins">
+    <section className="py-10 bg-[#EFF0F4] lg:py-20  font-poppins">
       <div className="max-w-xl mx-auto ">
         <div className="text-center ">
           <div className="flex flex-col items-center  ">
