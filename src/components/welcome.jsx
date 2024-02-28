@@ -1,10 +1,11 @@
 import React from "react";
 import bg1 from "../images/first_block_very_new.png";
 import bg2 from "../images/first_small_very_new.png";
+import bg3 from "../images/first_block_very_new_md.png";
 import { useResize } from "../hooks/useResize";
 
 function Welcome() {
-  const { isScreenLg } = useResize();
+  const { isScreenLg, isScreenMd } = useResize();
 
   return (
     <div
@@ -12,7 +13,7 @@ function Welcome() {
       style={{
         backgroundImage: `
            linear-gradient(to bottom, rgba(255, 255, 255, 0.3), transparent 1%, transparent 99%, rgba(255, 255, 255, 1)),
-           url(${isScreenLg ? bg1 : bg2})
+           url(${isScreenLg ? bg1 : isScreenMd ? bg3 : bg2})
          `,
       }}
     >

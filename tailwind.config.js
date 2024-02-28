@@ -5,6 +5,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      textStroke: {
+        '4': '4px',
+      },
+      textStrokeColor: {
+        'black1': '#000000',
+      },
       colors: {
         "way-green": "#00af50",
         "way-yellow": "#ffff00",
@@ -25,6 +31,7 @@ module.exports = {
       },
       fontFamily: {
         raleway: ['Raleway'],
+        lobster: ['Lobster'],
       },
     },
   },
