@@ -36,7 +36,7 @@ function Main() {
   return (
     <div className=" flex flex-col justify-center items-center   ">
       <Welcome8 />
-      <Timeline8 />
+      {/* <Timeline8 /> */}
       {/* {showButton && (
         <div
           className="fixed  p-2 bottom-4 right-4 animate-bounce  "

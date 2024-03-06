@@ -66,13 +66,13 @@ function Timeline8() {
   };
   return (
     <div
-      className="  w-screen bg-cover lg:px-10  py-10 bg-right-top"
-      style={{
-        backgroundImage: `
-      
-      url(${bg8_2})
-    `,
-      }}
+      className="  w-screen bg-cover lg:px-10  py-10 bg-right-top bg-transparent"
+      //   style={{
+      //     backgroundImage: `
+
+      //   url(${bg8_2})
+      // `,
+      //   }}
     >
       <div className="card w-full  lg:w-1/2  ">
         <Timeline
