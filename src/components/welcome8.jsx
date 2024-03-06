@@ -75,7 +75,7 @@ function Welcome8() {
       <div className="md:2/3 2xl:w-1/2 h-full p-4 md:p-10">
         <div className=" w-full h-full   flex flex-col justify-center    items-center lg:justify-start lg:items-center  md:bg-none md:bg-opacity-0 rounded-md lg:mr-20 gap-10">
           <div className=" text-center">
-            <p className=" text-3xl font-lobster text-[#d50466] mt-10 md:text-5xl text-shadow">
+            <p className=" text-3xl font-lobster text-[#d50466]  md:text-5xl text-shadow">
               {" "}
               Дорогие наши девушки и женщины!
             </p>
@@ -102,12 +102,12 @@ function Welcome8() {
             </p>
           </div>
           <div className=" text-center">
-            <p className=" text-3xl font-lobster text-[#d50466]  md:text-5xl text-shadow">
+            <p className=" text-3xl font-lobster text-[#d50466]  md:text-5xl text-shadow my-10">
               С 8 Марта, дорогие дамы!
             </p>
           </div>
           <div className=" text-center">
-            <p className=" text-3xl font-lobster text-[#9a1c50] mt-10 md:text-5xl text-shadow">
+            <p className=" text-3xl font-lobster text-[#d50466]  md:text-5xl text-shadow">
               {" "}
               Хотим анонсировать план мероприятий на 7 марта:
             </p>
